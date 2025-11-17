@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simplify - Water & Air Testing Solutions</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700;800&family=Nunito+Sans:wght@300;400;600;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="logo.png" alt="Simplify Logo" class="logo-image">
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#why-choose">Why Choose Us</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="menu-toggle">
+          <i class="fas fa-bars menu-icon"></i>
+          <i class="fas fa-times close-icon"></i>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-background">
+      <div class="hero-shape"></div>
+      <div class="hero-shape shape-2"></div>
+    </div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text animate-pop-in">
+          <h1 class="hero-title">Simplified <span class="highlight">Sampling</span> Experience</h1>
+          <h2 class="hero-subtitle">Advanced Water & Air Quality Testing</h2>
+          <p class="hero-description">An app designed for efficient Earth, Water, Air, Sound, and Food pollution sample
+            collection and testing, featuring real-time data input, analysis, and auditable report generation to monitor
+            and manage product quality and industrial health.</p>
+          <div class="hero-buttons">
+            <a href="#features" class="btn-primary">Explore Features</a>
+          </div>
+        </div>
+        <div class="hero-image animate-fade-in-right">
+          <div class="hero-image-container">
+            <img src="/hero.jpg" alt="Simplify Sampling Platform" class="main-image">
+            <div class="floating-element element-1 animate-float"></div>
+            <div class="floating-element element-2 animate-float-delay-1"></div>
+            <div class="floating-element element-3 animate-float-delay-2"></div>
+            <div class="circular-image animate-zoom-in delay-3">
+              <img src="/hero.jpg" alt="Team Collaboration">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <a href="#features">
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Video Section -->
+  <section class="video-section">
+    <div class="video-shapes">
+      <div class="video-shape shape-1 animate-float"></div>
+      <div class="video-shape shape-2 animate-float-delay-1"></div>
+      <div class="video-shape shape-3 animate-float-delay-2"></div>
+    </div>
+    <div class="container">
+      <div class="video-content">
+        <div class="video-text animate-pop-in">
+          <h2 class="video-title">Watch Our <span class="highlight">Samplify</span> Video</h2>
+          <p class="video-description">See how our innovative platform simplifies environmental sampling and testing</p>
+        </div>
+        <div class="video-player-container animate-fade-in-right delay-1">
+          <div class="video-player">
+            <div class="video-thumbnail">
+              <video autoplay muted loop class="video-background">
+                <source src="background.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>
+              <div class="play-button" id="playVideo">
+                <i class="fas fa-play"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Video Popup Modal -->
+  <div class="video-popup" id="videoPopup">
+    <div class="video-popup-content">
+      <span class="close-popup" id="closePopup">&times;</span>
+      <div class="video-popup-container">
+        <video controls class="popup-video" id="popupVideo">
+          <source src="background.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+
+  <!-- Awesome Features Section -->
+  <section id="features" class="features">
+    <div class="features-background">
+      <div class="features-shape shape-1"></div>
+      <div class="features-shape shape-2"></div>
+      <div class="features-shape shape-3"></div>
+    </div>
+    <div class="container">
+      <div class="section-header animate-pop-in">
+        <h2>Awesome Features</h2>
+        <p>Discover our cutting-edge testing capabilities</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card animate-fade-in-up delay-1">
+          <div class="feature-icon">
+            <i class="fas fa-sync-alt"></i>
+          </div>
+          <h3>Streamlined and Automated Sampling</h3>
+          <p>Designed to simplify and automate sampling processes, ensuring seamless and efficient operations.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-2">
+          <div class="feature-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <h3>GPS-Enabled Real-Time Data Entry</h3>
+          <p>Sampling officers can log in quickly, record sample parameters using GPS-enabled data entry, and submit
+            results in real time, minimizing paperwork and improving accuracy.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-3">
+          <div class="feature-icon">
+            <i class="fas fa-vial"></i>
+          </div>
+          <h3>Versatile Multi-Sample Type Support</h3>
+          <p>The app supports 15 sample types, including Water/Effluent, Ambient Air/Fugitive Emissions, Stack Emission,
+            Environmental, Air/Swabs, Food, Noise, Solid Waste, and more.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-4">
+          <div class="feature-icon">
+            <i class="fas fa-user-friends"></i>
+          </div>
+          <h3>User-Friendly for Sampling Personnel</h3>
+          <p>Sampling personnel can easily log in, collect data across various sample types, and submit it directly for
+            testing, ensuring accuracy and efficiency in data collection and reporting</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-5">
+          <div class="feature-icon">
+            <i class="fas fa-eye"></i>
+          </div>
+          <h3>Managerial Oversight</h3>
+          <p>Managers can review submitted sample collections, identify mistakes, and correct errors to maintain data
+            integrity.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-6">
+          <div class="feature-icon">
+            <i class="fas fa-user-shield"></i>
+          </div>
+          <h3>Comprehensive Admin Management</h3>
+          <p>Admins can manage both managers and sampling officers, ensuring smooth operation and oversight.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-6">
+          <div class="feature-icon">
+            <i class="fas fa-file-alt"></i>
+          </div>
+          <h3>Real-Time Reporting and Data Export</h3>
+          <p>Generate real-time reports on completed sampling activities, export data for analysis or sharing, and print
+            sampling reports for documentation.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-6">
+          <div class="feature-icon">
+            <i class="fas fa-list-ol"></i>
+          </div>
+          <h3>Guided Workflows for Data Accuracy</h3>
+          <p>Provides guided workflows for processes like adding new records, editing existing records, and submitting
+            data. Users can review entered data before submission to ensure accuracy.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+        <div class="feature-card animate-fade-in-up delay-6">
+          <div class="feature-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Secure and Scalable Platform</h3>
+          <p>Ensures data security with encrypted storage and offers scalability to accommodate growing sample
+            collection needs across multiple regions or departments.</p>
+          <div class="feature-hover-element element-1"></div>
+          <div class="feature-hover-element element-2"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It Works</h2>
+        <p>Simple process for professional environmental testing</p>
+      </div>
+      <div class="steps-container">
+        <div class="step step-1 animate-fade-in-left">
+          <div class="step-icon">
+            <i class="fas fa-user-plus"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">01</div>
+            <h3>Sign Up & Create Account</h3>
+            <p>Register your organization and set up your testing profile with all necessary details.</p>
+          </div>
+        </div>
+        <div class="step step-2 animate-fade-in-left delay-1">
+          <div class="step-icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">02</div>
+            <h3>Select Sampling Locations</h3>
+            <p>Choose your testing sites on the interactive map or enter coordinates manually.</p>
+          </div>
+        </div>
+        <div class="step step-3 animate-fade-in-left delay-2">
+          <div class="step-icon">
+            <i class="fas fa-calendar-check"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">03</div>
+            <h3>Schedule Sampling</h3>
+            <p>Pick dates and times for sample collection that work best for your operations.</p>
+          </div>
+        </div>
+        <div class="step step-4 animate-fade-in-left delay-3">
+          <div class="step-icon">
+            <i class="fas fa-users"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">04</div>
+            <h3>Assign Sampling Team</h3>
+            <p>Designate team members for each location with specific roles and responsibilities.</p>
+          </div>
+        </div>
+        <div class="step step-5 animate-fade-in-left delay-4">
+          <div class="step-icon">
+            <i class="fas fa-vial"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">05</div>
+            <h3>Conduct Sampling</h3>
+            <p>Collect samples using our standardized procedures and GPS-enabled mobile app.</p>
+          </div>
+        </div>
+        <div class="step step-6 animate-fade-in-left delay-5">
+          <div class="step-icon">
+            <i class="fas fa-flask"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">06</div>
+            <h3>Laboratory Analysis</h3>
+            <p>Samples are processed in our certified labs with advanced equipment and techniques.</p>
+          </div>
+        </div>
+        <div class="step step-7 animate-fade-in-left delay-6">
+          <div class="step-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <div class="step-content">
+            <div class="step-number">07</div>
+            <h3>Generate Reports</h3>
+            <p>Receive comprehensive reports with visualizations and compliance recommendations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testing Data Section -->
+  <section id="testing-data" class="testing-data">
+    <div class="testing-data-background">
+      <div class="testing-data-shape shape-1"></div>
+      <div class="testing-data-shape shape-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header animate-pop-in">
+        <h1 class="why-choose-heading">Testing Data Sheets</h1>
+        <span class="why-choose-subheading">Comprehensive data recording sheets for all your environmental testing needs</span>
+      </div>
+      <div class="testing-data-grid">
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-tint"></i>
+          </div>
+          <h3>Water/Effluent Sample</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-wind"></i>
+          </div>
+          <h3>Ambient Air/Fugitive Emission Monitoring Data Recording Sheet</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-smog"></i>
+          </div>
+          <h3>Stack Emission Monitoring Data Recording Sheet</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-seedling"></i>
+          </div>
+          <h3>Environmental Sampling Record</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-vial"></i>
+          </div>
+          <h3>Air/Swabs and Food Sample</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-clipboard-list"></i>
+          </div>
+          <h3>Workplace Environment Monitoring Data Recording Sheet</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-volume-up"></i>
+          </div>
+          <h3>Continuous Noise Monitoring</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-bullhorn"></i>
+          </div>
+          <h3>Source Noise Monitoring</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-chart-bar"></i>
+          </div>
+          <h3>Spot Reading Noise Monitoring</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-cloud-sun"></i>
+          </div>
+          <h3>Air Testing Data Recording Sheet</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-lungs"></i>
+          </div>
+          <h3>Sampling Data Sheet For Medical Oxygen</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-recycle"></i>
+          </div>
+          <h3>Solid Waste/Hazardous Waste/Soil/Solid Fuel Samples</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <h3>Illumination Measurement Sheet</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-fan"></i>
+          </div>
+          <h3>Ventilation Measurement Sheet</h3>
+        </div>
+        <div class="testing-data-card">
+          <div class="testing-data-icon">
+            <i class="fas fa-file-contract"></i>
+          </div>
+          <h3>Test Request/Contract Review Form</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonials">
+    <div class="testimonials-background">
+      <div class="testimonials-shape shape-1"></div>
+      <div class="testimonials-shape shape-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header animate-pop-in">
+        <h2>What Our Clients Say</h2>
+        <p>Trusted by industry leaders across various sectors</p>
+      </div>
+      <div class="testimonials-container">
+        <div class="testimonial-card animate-fade-in-up delay-1">
+          <div class="testimonial-content">
+            <p>"Simplify has revolutionized our environmental monitoring process. The accuracy and ease of use have saved us countless hours while improving our data quality."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>John Anderson</h4>
+                <p>Environmental Manager, TechCorp</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-fade-in-up delay-2">
+          <div class="testimonial-content">
+            <p>"The multi-source data integration feature is a game-changer. We can now monitor air, water, and soil quality from a single platform with real-time insights."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Sarah Johnson</h4>
+                <p>Quality Assurance Director, GreenIndustries</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card animate-fade-in-up delay-3">
+          <div class="testimonial-content">
+            <p>"As a regulatory compliance officer, I appreciate the detailed reporting capabilities. Simplify makes it easy to generate the documentation we need for audits."</p>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Michael Chen</h4>
+                <p>Compliance Officer, Manufacturing Plus</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Security Section -->
+  <!-- Enterprise-Grade Security with animated background elements -->
+  <section id="security" class="security">
+    <div class="security-background">
+      <!-- Background shapes for visual design -->
+      <div class="security-shape shape-1"></div>
+    </div>
+    <div class="container">
+      <div class="security-container">
+        <div class="security-content animate-fade-in-left">
+          <div class="section-header">
+            <h2>Enterprise-Grade Security</h2>
+            <p>Your data protection is our top priority</p>
+          </div>
+          <div class="security-features">
+            <div class="security-feature animate-fade-in-right delay-1">
+              <div class="security-feature-icon">
+                <i class="fas fa-shield-alt"></i>
+              </div>
+              <div class="security-feature-content">
+                <h3>End-to-End Encryption</h3>
+                <p>All data is encrypted both in transit and at rest using industry-standard protocols.</p>
+              </div>
+            </div>
+            <div class="security-feature animate-fade-in-right delay-2">
+              <div class="security-feature-icon">
+                <i class="fas fa-user-lock"></i>
+              </div>
+              <div class="security-feature-content">
+                <h3>Role-Based Access</h3>
+                <p>Control who can access what data with granular permission settings.</p>
+              </div>
+            </div>
+            <div class="security-feature animate-fade-in-right delay-3">
+              <div class="security-feature-icon">
+                <i class="fas fa-file-contract"></i>
+              </div>
+              <div class="security-feature-content">
+                <h3>Compliance Ready</h3>
+                <p>Built to meet GDPR, HIPAA, and other regulatory requirements.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="security-image animate-fade-in-right">
+          <div class="security-placeholder">
+            <i class="fas fa-lock"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why-choose" class="why-choose">
+    <div class="why-choose-background">
+      <div class="why-choose-shape shape-1"></div>
+      <div class="why-choose-shape shape-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header animate-pop-in">
+        <h1 class="why-choose-heading">Why Choose Us?</h1>
+        <span class="why-choose-subheading">Trusted by industry leaders for reliable environmental testing</span>
+      </div>
+      <div class="benefits-container">
+        <div class="benefit animate-fade-in-right delay-1">
+          <div class="benefit-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Accurate Pollution Analysis</h3>
+            <p>Our app uses advanced algorithms to provide precise pollution data, ensuring reliable insights for
+              product quality and environmental health.</p>
+          </div>
+        </div>
+        <div class="benefit animate-fade-in-right delay-2">
+          <div class="benefit-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Multi-Source Data Integration</h3>
+            <p>The app consolidates data from multiple environmental sources, ensuring comprehensive monitoring across
+              Earth, Water, Air, Sound, and Food pollution categories.</p>
+          </div>
+        </div>
+        <div class="benefit animate-fade-in-right delay-3">
+          <div class="benefit-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Easy-to-Use Interface</h3>
+            <p>Designed for simplicity, our app ensures a seamless experience, whether you're collecting samples or
+              reviewing your reports.</p>
+          </div>
+        </div>
+        <div class="benefit animate-fade-in-right delay-4">
+          <div class="benefit-icon">
+            <i class="fas fa-check-circle"></i>
+          </div>
+          <div class="benefit-content">
+            <h3>Cost-Effective</h3>
+            <p>Save time and resources while managing product quality and environmental health without needing expensive
+              equipment or specialized tools.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Get In Touch Section -->
+  <section id="contact" class="contact">
+    <div class="contact-background">
+      <div class="contact-shape shape-1"></div>
+      <div class="contact-shape shape-2"></div>
+    </div>
+    <div class="container">
+      <div class="section-header animate-pop-in">
+        <h2>Get In Touch</h2>
+        <p>Have questions? Reach out to our team</p>
+      </div>
+      <div class="contact-container">
+        <div class="contact-info animate-fade-in-left">
+          <h3 class="contact-title">Contact Information</h3>
+          <div class="contact-card animate-fade-in-up delay-1">
+            <div class="contact-icon">
+              <i class="fas fa-map-marker-alt"></i>
+            </div>
+            <div class="contact-content">
+              <h4>Location</h4>
+              <p class="contact-text">Abracadabra Software Solutions Pvt. Ltd.<br>
+                2nd Floor, Krishna Building, Above Diya Dinning Hall,<br>
+                Bytco Point, Nashik Road, Nashik 422101,<br>
+                Maharashtra, India</p>
+            </div>
+          </div>
+          <div class="contact-card animate-fade-in-up delay-2">
+            <div class="contact-icon">
+              <i class="fas fa-phone-alt"></i>
+            </div>
+            <div class="contact-content">
+              <h4>Phone</h4>
+              <p class="contact-text">+91 9822545211</p>
+            </div>
+          </div>
+          <div class="contact-card animate-fade-in-up delay-3">
+            <div class="contact-icon">
+              <i class="fas fa-envelope"></i>
+            </div>
+            <div class="contact-content">
+              <h4>Email</h4>
+              <p class="contact-text">support@Abraca-Dabra.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form animate-fade-in-right">
+          <div class="form-container">
+            <h3 class="form-title">Send us a Message</h3>
+            <form>
+              <div class="form-group animate-fade-in-up delay-1">
+                <input type="text" placeholder="Your Name" required>
+              </div>
+              <div class="form-group animate-fade-in-up delay-2">
+                <input type="email" placeholder="Your Email" required>
+              </div>
+              <div class="form-group animate-fade-in-up delay-3">
+                <input type="text" placeholder="Subject">
+              </div>
+              <div class="form-group animate-fade-in-up delay-4">
+                <textarea placeholder="Your Message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn-primary animate-fade-in-up delay-5">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Download App Section -->
+  <!-- Animated colorful circles background for visual appeal -->
+  <section class="download-app">
+    <div class="download-app-background">
+      <!-- Floating animated circles with different colors and sizes -->
+      <div class="app-circle circle-1"></div>
+      <div class="app-circle circle-2"></div>
+      <div class="app-circle circle-3"></div>
+      <div class="app-circle circle-4"></div>
+    </div>
+    <div class="container">
+      <div class="app-container">
+        <div class="app-content animate-fade-in-left">
+          <h2>Download Our Mobile App</h2>
+          <p>Access your test results, schedule new tests, and receive alerts on your mobile device.</p>
+          <div class="app-buttons">
+            <button class="app-btn">
+              <i class="fab fa-apple"></i>
+              <div>
+                <span>Download on the</span>
+                <span>App Store</span>
+              </div>
+            </button>
+            <button class="app-btn">
+              <i class="fab fa-google-play"></i>
+              <div>
+                <span>GET IT ON</span>
+                <span>Google Play</span>
+              </div>
+            </button>
+          </div>
+        </div>
+        <div class="app-image animate-fade-in-right">
+          <img src="app-mockup.png" alt="Simplify Mobile App">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-background">
+      <div class="footer-circle circle-1"></div>
+      <div class="footer-circle circle-2"></div>
+      <div class="footer-circle circle-3"></div>
+      <div class="footer-circle circle-4"></div>
+    </div>
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-column">
+          <div class="logo">
+            <h2>Simplify<span>.</span></h2>
+          </div>
+          <p>Providing professional water and air quality testing solutions since 2010.</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#why-choose">Why Choose Us</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#testing-data">Testing Data</a></li>
+            <li><a href="#security">Security</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Services</h3>
+          <ul>
+            <li><a href="#">Water Testing</a></li>
+            <li><a href="#">Air Quality Monitoring</a></li>
+            <li><a href="#">Soil Analysis</a></li>
+            <li><a href="#">Environmental Consulting</a></li>
+            <li><a href="#">Compliance Reporting</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Newsletter</h3>
+          <p>Subscribe to our newsletter for the latest updates.</p>
+          <form class="newsletter-form">
+            <input type="email" placeholder="Your Email" required>
+            <button type="submit"><i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; Copyright Abracadabra Software Solutions Pvt. Ltd. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
