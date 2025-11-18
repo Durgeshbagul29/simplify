@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Samplify - Water & Air Testing Solutions</title>
+  <title>Samplify - Pollution Sampling Solution</title>
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link
@@ -91,10 +91,7 @@
       <div class="video-player-container animate-fade-in-right delay-1">
         <div class="video-player">
           <div class="video-thumbnail">
-            <video autoplay muted loop class="video-background">
-              <source src="background.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+            <img src="video_thumbnail.jpg" alt="video-background" class="video-thumbnail-image" loading="lazy">
           </div>
         </div>
       </div>
@@ -320,12 +317,6 @@
           </div>
           <h3>Ventilation Measurement Sheet</h3>
         </div>
-        <div class="testing-data-card">
-          <div class="testing-data-icon">
-            <i class="fas fa-file-contract"></i>
-          </div>
-          <h3>Test Request/Contract Review Form</h3>
-        </div>
       </div>
     </div>
   </section>
@@ -342,19 +333,28 @@
         <div class="how-it-works-row">
           <div class="how-it-works-video-container">
             <video autoplay muted loop class="how-it-works-video">
-              <source src="dashbord.mp4" type="video/mp4">
+              <source src="inernal.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
           <div class="how-it-works-content">
             <h3>Mobile App Working</h3>
             <ul class="features-list">
-              <li><i class="fas fa-check-circle"></i> Field personnel collect samples using GPS-enabled mobile devices
+              <li><i class="fas fa-check-circle"></i> Login using username & password.</li>
+              <li><i class="fas fa-check-circle"></i> Dashboard shows today’s tasks, monthly schedule, and sampling
+                categories.</li>
+              <li><i class="fas fa-check-circle"></i> Choose any sampling type (Water, Air, Noise, Food, Waste, etc.).
               </li>
-              <li><i class="fas fa-check-circle"></i> Real-time data entry with automatic location tagging</li>
-              <li><i class="fas fa-check-circle"></i> Instant synchronization with central database</li>
-              <li><i class="fas fa-check-circle"></i> Automated workflow routing for sample processing</li>
-              <li><i class="fas fa-check-circle"></i> Digital chain of custody documentation</li>
+              <li><i class="fas fa-check-circle"></i> Tap Add New Sample to start a new record.</li>
+              <li><i class="fas fa-check-circle"></i> Fill basic details (date, samples count, customer, etc.).</li>
+              <li><i class="fas fa-check-circle"></i> Take concerned person’s signature and continue.</li>
+              <li><i class="fas fa-check-circle"></i> Fill detailed sampling form (location, equipment ID, procedure,
+                timings).</li>
+              <li><i class="fas fa-check-circle"></i> Add sampling images if required.</li>
+              <li><i class="fas fa-check-circle"></i> Preview the entire form.</li>
+              <li><i class="fas fa-check-circle"></i> Add sampling person’s signature and submit.</li>
+              <li><i class="fas fa-check-circle"></i> Use Draft List to edit incomplete forms.</li>
+              <li><i class="fas fa-check-circle"></i> Use Completed List to view submitted samples.</li>
             </ul>
           </div>
         </div>
@@ -364,34 +364,44 @@
           <div class="how-it-works-content">
             <h3>Admin Panel Features</h3>
             <ul class="features-list">
-              <li><i class="fas fa-check-circle"></i> Managerial oversight and data review</li>
-              <li><i class="fas fa-check-circle"></i> Error identification and correction</li>
-              <li><i class="fas fa-check-circle"></i> User management for teams and roles</li>
-              <li><i class="fas fa-check-circle"></i> Real-time reporting and analytics</li>
-              <li><i class="fas fa-check-circle"></i> Data export and compliance reporting</li>
+              <li><i class="fas fa-check-circle"></i> Admin & Managers login securely using credentials.</li>
+              <li><i class="fas fa-check-circle"></i> Dashboard shows stats like total Managers, Lab Assistants &
+                Sampling Persons.</li>
+              <li><i class="fas fa-check-circle"></i> Manage Managers, Lab Assistants & Sampling Persons with add/edit
+                options.</li>
+              <li><i class="fas fa-check-circle"></i> Create and manage Monthly Schedules for sampling persons.</li>
+              <li><i class="fas fa-check-circle"></i> Add and manage Customers for each city/branch.</li>
+              <li><i class="fas fa-check-circle"></i> Manage Branch Offices/Cities (Super Admin only).</li>
+              <li><i class="fas fa-check-circle"></i> View all sample categories and detailed sampling records.</li>
+              <li><i class="fas fa-check-circle"></i> Open Field IDs to view full sampling forms & download PDF.</li>
+              <li><i class="fas fa-check-circle"></i> Filter and view Sample Reports by customer, sample type & date.
+              </li>
+              <li><i class="fas fa-check-circle"></i> View Scheduled Reports for sampling activities.</li>
+              <li><i class="fas fa-check-circle"></i> Update profile & change password through Account Settings.</li>
+            </ul>
             </ul>
           </div>
           <div class="how-it-works-image">
-            <img src="admin.jpg" alt="Admin Panel Dashboard">
+            <img src="admin1.jpg" alt="Admin Panel Dashboard">
           </div>
         </div>
 
         <!-- Backend System Section -->
         <div class="how-it-works-row">
-          <div class="how-it-works-video-container">
-            <video autoplay muted loop class="how-it-works-video">
-              <source src="dashbord.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
+          <div class="how-it-works-image">
+            <img src="backend.jpg" alt="Admin Panel Dashboard">
           </div>
           <div class="how-it-works-content">
             <h3>Backend System</h3>
             <ul class="features-list">
-              <li><i class="fas fa-check-circle"></i> Secure data storage and encryption</li>
-              <li><i class="fas fa-check-circle"></i> Scalable cloud infrastructure</li>
-              <li><i class="fas fa-check-circle"></i> Automated data processing and analysis</li>
-              <li><i class="fas fa-check-circle"></i> Real-time synchronization across platforms</li>
-              <li><i class="fas fa-check-circle"></i> API integrations for third-party systems</li>
+              <li><i class="fas fa-check-circle"></i> Centralized backend for managing users, customers & schedules.
+              </li>
+              <li><i class="fas fa-check-circle"></i> Stores all sampling data submitted from mobile app.</li>
+              <li><i class="fas fa-check-circle"></i> Role-based access for Super Admin, Managers & Lab Assistants.</li>
+              <li><i class="fas fa-check-circle"></i> Generates Field IDs and organizes samples by category.</li>
+              <li><i class="fas fa-check-circle"></i> Secure cloud database with automatic data syncing.</li>
+              <li><i class="fas fa-check-circle"></i> Allows PDF generation for every sampling record.</li>
+              <li><i class="fas fa-check-circle"></i> Provides filtering options by date, customer & sample type.</li>
             </ul>
           </div>
         </div>
@@ -401,29 +411,22 @@
           <div class="how-it-works-content">
             <h3>Reporting & Analytics</h3>
             <ul class="features-list">
-              <li><i class="fas fa-check-circle"></i> Customizable report generation</li>
-              <li><i class="fas fa-check-circle"></i> Interactive data visualizations</li>
-              <li><i class="fas fa-check-circle"></i> Compliance recommendation engine</li>
-              <li><i class="fas fa-check-circle"></i> Historical trend analysis</li>
-              <li><i class="fas fa-check-circle"></i> Automated report scheduling and distribution</li>
+              <li><i class="fas fa-check-circle"></i> View all sample reports submitted from the mobile app.</li>
+              <li><i class="fas fa-check-circle"></i> Generate category-wise sampling summaries.</li>
+              <li><i class="fas fa-check-circle"></i> Download PDF reports directly from backend.</li>
+              <li><i class="fas fa-check-circle"></i> Track sampling activity through schedule reports.</li>
+              <li><i class="fas fa-check-circle"></i> Search reports by customer, date, city or sample type.</li>
+              <li><i class="fas fa-check-circle"></i> Monitor staff performance through submission logs.</li>
+              <li><i class="fas fa-check-circle"></i> Maintain historical sampling data for future reference.</li>
             </ul>
           </div>
           <div class="how-it-works-video-container">
             <video autoplay muted loop class="how-it-works-video">
-              <source src="dashbord.mp4" type="video/mp4">
+              <source src="form.mp4" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
         </div>
-
-        <div class="video-wrapper">
-          <video autoplay loop muted playsinline>
-            <source src="intro.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-          </video>
-        </div>
-
-
       </div>
     </div>
   </section>
@@ -483,59 +486,6 @@
                 <p>Compliance Officer, Manufacturing Plus</p>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Security Section -->
-  <!-- Enterprise-Grade Security with animated background elements -->
-  <section id="security" class="security">
-    <div class="security-background">
-      <!-- Background shapes for visual design -->
-      <div class="security-shape shape-1"></div>
-    </div>
-    <div class="container">
-      <div class="security-container">
-        <div class="security-content animate-fade-in-left">
-          <div class="section-header">
-            <h2>Enterprise-Grade Security</h2>
-            <p>Your data protection is our top priority</p>
-          </div>
-          <div class="security-features">
-            <div class="security-feature animate-fade-in-right delay-1">
-              <div class="security-feature-icon">
-                <i class="fas fa-shield-alt"></i>
-              </div>
-              <div class="security-feature-content">
-                <h3>End-to-End Encryption</h3>
-                <p>All data is encrypted both in transit and at rest using industry-standard protocols.</p>
-              </div>
-            </div>
-            <div class="security-feature animate-fade-in-right delay-2">
-              <div class="security-feature-icon">
-                <i class="fas fa-user-lock"></i>
-              </div>
-              <div class="security-feature-content">
-                <h3>Role-Based Access</h3>
-                <p>Control who can access what data with granular permission settings.</p>
-              </div>
-            </div>
-            <div class="security-feature animate-fade-in-right delay-3">
-              <div class="security-feature-icon">
-                <i class="fas fa-file-contract"></i>
-              </div>
-              <div class="security-feature-content">
-                <h3>Compliance Ready</h3>
-                <p>Built to meet GDPR, HIPAA, and other regulatory requirements.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="security-image animate-fade-in-right">
-          <div class="security-placeholder">
-            <i class="fas fa-lock"></i>
           </div>
         </div>
       </div>
