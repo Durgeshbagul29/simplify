@@ -10,19 +10,24 @@ window.addEventListener('scroll', () => {
 
 // Video popup functionality
 document.addEventListener('DOMContentLoaded', () => {
-    const playButton = document.getElementById('playVideo');
+    // Get the video section by its ID
+    const videoSection = document.getElementById('videoSection');
     const videoPopup = document.getElementById('videoPopup');
     const closePopup = document.getElementById('closePopup');
     const popupVideo = document.getElementById('popupVideo');
     
-    if (playButton && videoPopup && closePopup && popupVideo) {
-        // Open popup when play button is clicked
-        playButton.addEventListener('click', () => {
-            videoPopup.classList.add('active');
-            // Play the video when popup opens
-            popupVideo.play().catch(error => {
-                console.log('Video play failed:', error);
-            });
+    if (videoSection && videoPopup && closePopup && popupVideo) {
+        // Open popup when video section is clicked
+        videoSection.addEventListener('click', (e) => {
+            // Prevent opening popup when clicking on links or buttons within the section
+            if (e.target.tagName !== 'A' && e.target.tagName !== 'BUTTON') {
+                e.preventDefault();
+                videoPopup.classList.add('active');
+                // Play the video when popup opens
+                popupVideo.play().catch(error => {
+                    console.log('Video play failed:', error);
+                });
+            }
         });
         
         // Close popup when close button is clicked
@@ -56,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
 const menuToggle = document.querySelector('.menu-toggle');
 const navLinks = document.querySelector('.nav-links');
 
+// Toggle menu on click
 menuToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
 });
@@ -65,6 +71,13 @@ document.querySelectorAll('.nav-links a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
     });
+});
+
+// Close menu when clicking outside
+document.addEventListener('click', (e) => {
+    if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && navLinks.classList.contains('active')) {
+        navLinks.classList.remove('active');
+    }
 });
 
 // Animation on scroll
