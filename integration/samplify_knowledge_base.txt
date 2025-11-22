@@ -1,0 +1,71 @@
+Samplify Knowledge Base for Chatbot
+
+PRODUCT INFORMATION:
+Samplify is an environmental sampling solution that provides comprehensive water and air quality testing. Our platform offers real-time data entry, GPS capabilities, and detailed reporting features.
+
+SUPPORTED SAMPLE TYPES:
+1. Water/Effluent Testing
+2. Ambient Air/Fugitive Emissions
+3. Stack Emission Monitoring
+4. Environmental Sampling
+5. Air/Swabs Analysis
+6. Food Safety Testing
+7. Noise Level Assessment
+8. Solid Waste Analysis
+
+MOBILE APP FEATURES:
+- Real-time data entry with offline capabilities
+- GPS location tracking for sample collection
+- Photo documentation with geotagging
+- Instant report generation
+- Compliance tracking with regulatory standards
+- Multi-user collaboration tools
+- Cloud synchronization across devices
+
+HOW TO DOWNLOAD THE APP:
+Our mobile application is available on the Google Play Store for Android devices. Search for "Samplify" in the Play Store or visit this link: https://play.google.com/store/apps/details?id=com.samplify.app
+
+TECHNICAL SUPPORT:
+For technical assistance, users can:
+1. Access the in-app help center
+2. Contact our support team via email at support@samplify.com
+3. Call our 24/7 support hotline at 1-800-SAMPLE-1
+4. Schedule a live demo with our technical team
+
+PRICING PLANS:
+1. Basic Plan: $29/month per user - Includes core sampling features
+2. Professional Plan: $59/month per user - Adds advanced reporting and analytics
+3. Enterprise Plan: Custom pricing - Includes all features plus dedicated support and custom integrations
+
+TRAINING RESOURCES:
+We offer comprehensive training materials including:
+- Video tutorials for all app features
+- Interactive webinars every Thursday at 2 PM EST
+- Downloadable user guides in PDF format
+- Live training sessions by appointment
+
+DATA SECURITY:
+All user data is encrypted both in transit and at rest. We comply with GDPR, HIPAA, and other relevant data protection regulations. Data is stored in secure cloud servers with regular backups.
+
+COMPANY BACKGROUND:
+Founded in 2018, Samplify has helped over 500 environmental agencies, laboratories, and industrial facilities streamline their sampling workflows. Our team of environmental scientists and software engineers work together to create the most effective sampling solution on the market.
+
+CONTACT INFORMATION:
+- General Inquiries: info@samplify.com
+- Sales: sales@samplify.com
+- Support: support@samplify.com
+- Phone: 1-800-SAMPLE-1 (1-800-726-7531)
+- Address: 123 Environmental Way, Green City, GC 12345
+
+FREQUENTLY ASKED QUESTIONS:
+Q: Can I use Samplify for soil testing?
+A: While our primary focus is water and air quality, our Professional and Enterprise plans include soil testing modules.
+
+Q: Is there a desktop version available?
+A: Yes, we offer a web-based dashboard that complements our mobile app. All data syncs seamlessly between platforms.
+
+Q: How quickly can I get set up with Samplify?
+A: Most users are fully operational within 24 hours of signing up. We provide onboarding assistance to help you configure the system for your specific needs.
+
+Q: Do you offer custom integrations?
+A: Yes, our Enterprise plan includes custom API integrations with existing laboratory information management systems (LIMS) and enterprise resource planning (ERP) software.
