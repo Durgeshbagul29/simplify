@@ -518,13 +518,8 @@ document.addEventListener('DOMContentLoaded', () => {
         // ====== STORE USER DETAILS WITH APPS IN GOOGLE SHEET ======
         async function storeUserDataWithApps(data) {
             const apps = data.apps ? data.apps.join(", ") : "";
-            // Only send timestamp if it exists (should only be sent the first time)
-            let body = `type=user&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&email=${encodeURIComponent(data.email)}&apps=${encodeURIComponent(apps)}`;
-            
-            // Add timestamp only if it exists (first time data collection)
-            if (data.timestamp) {
-                body += `&timestamp=${encodeURIComponent(data.timestamp)}`;
-            }
+            const timestamp = data.timestamp ? data.timestamp : new Date().toISOString();
+            const body = `type=user&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&email=${encodeURIComponent(data.email)}&apps=${encodeURIComponent(apps)}&timestamp=${encodeURIComponent(timestamp)}`;
 
             console.log("Sending User Data with Apps to Google Sheet ➜", body);
 
