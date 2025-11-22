@@ -4497,7 +4497,7 @@ footer {
 }
 
 .faq-item.active .faq-answer {
-    padding: 0 25px 25px;
+    padding: 10px 25px 25px;
     max-height: 500px;
 }
 

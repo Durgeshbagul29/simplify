@@ -23,12 +23,12 @@ function doPost(e) {
     // Get parameters from the request
     const name = e.parameter.name || '';
     const phone = e.parameter.phone || '';
-    const address = e.parameter.address || '';
+    const email = e.parameter.email || '';
     const apps = e.parameter.apps || '';
     const timestamp = new Date();
     
     // Add data to the sheet (without message)
-    sheet.appendRow([timestamp, name, phone, address, apps]);
+    sheet.appendRow([timestamp, name, phone, email, apps]);
     
     // Return success response
     return ContentService
@@ -57,5 +57,5 @@ function doGet(e) {
 function initializeSheet() {
   const sheet = SpreadsheetApp.openById(SHEET_ID).getActiveSheet();
   sheet.clear(); // Clear existing data
-  sheet.appendRow(['Timestamp', 'Name', 'Phone', 'Address', 'Apps']);
+  sheet.appendRow(['Timestamp', 'Name', 'Phone', 'Email', 'Apps']);
 }

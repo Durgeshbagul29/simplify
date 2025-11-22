@@ -103,7 +103,7 @@ async function getCustomKnowledge() {
  * Enhanced Gemini API function that incorporates custom knowledge
  * 
  * @param {string} prompt - The user's message
- * @param {object} userData - User information (name, phone, address)
+ * @param {object} userData - User information (name, phone, email)
  * @returns {Promise<string>} The AI response enhanced with custom knowledge
  */
 async function getEnhancedGeminiResponse(prompt, userData) {
@@ -128,7 +128,7 @@ You must answer user questions using the CUSTOM KNOWLEDGE BASE as your main sour
 USER INFORMATION:
 Name: ${userData.name}
 Phone: ${userData.phone}
-Address: ${userData.address}
+Email: ${userData.email}
 
 ABOUT SAMPLIFY:
 Samplify provides water and air quality testing solutions with real-time data entry, GPS capabilities, and comprehensive reporting.
@@ -142,8 +142,8 @@ INSTRUCTIONS FOR ANSWERING:
 1. SEARCH the knowledge base first for relevant information
 2. If found, use that information as your primary answer
 3. If not found, use your general knowledge but mention the limitation
-4. Be specific, accurate, and cite information from the knowledge base when possible
-5. If asked about features, procedures, or details, refer to the knowledge base sections
+4. Keep answers concise, no more than 3-4 lines
+5. DO NOT mention or cite sources, just provide the information directly
 6. Structure your answers clearly with bullet points or numbered lists when appropriate
 
 Please answer the user's question using the above information:`;
@@ -160,14 +160,14 @@ Please answer the user's question using the above information:`;
 
 USER QUESTION: ${prompt}
 
-PROVIDE A DETAILED, ACCURATE ANSWER BASED ON THE ABOVE INFORMATION. IF THE KNOWLEDGE BASE CONTAINS RELEVANT DETAILS, CITE THEM SPECIFICALLY. USE BULLET POINTS OR NUMBERED LISTS FOR CLARITY WHEN APPROPRIATE.`
+PROVIDE A CONCISE, ACCURATE ANSWER BASED ON THE ABOVE INFORMATION. KEEP YOUR ANSWER TO 3-4 LINES MAXIMUM. DO NOT MENTION OR CITE SOURCES. USE BULLET POINTS OR NUMBERED LISTS FOR CLARITY WHEN APPROPRIATE.`
                 }]
             }],
             generationConfig: {
                 temperature: 0.3, // Lower temperature for more factual responses
                 topK: 30,
                 topP: 0.9,
-                maxOutputTokens: 1500, // Increased token limit for more detailed responses
+                maxOutputTokens: 500, // Reduced token limit for concise responsess
             }
         };
 

@@ -236,7 +236,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const GOOGLE_WEB_APP = "https://script.google.com/macros/s/AKfycbw-FJHuxcPgJdgEGUNW4JkUqPmN23AylvWydBW9CBDTptIWcZrPvLYQRhmK47QVQsIZ/exec";
 
         // ====== USER DATA ======
-        let userData = { name: "", phone: "", address: "", apps: [], collected: false, timestamp: null };
+        let userData = { name: "", phone: "", email: "", apps: [], collected: false, timestamp: null };
         let collectionStep = 0;
         let userDataStored = false; // Flag to track if user data has been stored in Google Sheets
         
@@ -258,7 +258,8 @@ document.addEventListener('DOMContentLoaded', () => {
         chatBotBtn.addEventListener("click", () => {
             chatBotPopup.classList.toggle("active");
 
-            if (chatMessages.children.length === 1) {
+            // Only show welcome message if no messages exist (first time opening chat)
+            if (chatMessages.children.length === 0) {
                 if (userData.collected) {
                     // User data already collected, greet with name
                     addMessage(`Hello ${userData.name}! How can I assist you today?`, "bot");
@@ -293,6 +294,21 @@ document.addEventListener('DOMContentLoaded', () => {
         sendChatBtn.addEventListener("click", sendMessage);
         chatInput.addEventListener("keypress", e => e.key === "Enter" ? sendMessage() : null);
 
+        // ====== VALIDATION FUNCTIONS ======
+        function isValidPhoneNumber(phone) {
+            // Remove all non-digit characters
+            const cleaned = phone.replace(/\D/g, '');
+            // Check if it's exactly 10 digits or 11 digits starting with 1
+            return (cleaned.length === 10 && /^\d{10}$/.test(cleaned)) || 
+                   (cleaned.length === 11 && /^1\d{10}$/.test(cleaned));
+        }
+
+        function isValidEmail(email) {
+            // More comprehensive email validation regex
+            const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+            return emailRegex.test(email);
+        }
+
         // ====== COLLECT USER INFORMATION ======
         function collectUserInfo(msg) {
             if (collectionStep === 0) {
@@ -302,13 +318,23 @@ document.addEventListener('DOMContentLoaded', () => {
             }
 
             else if (collectionStep === 1) {
+                // Validate phone number
+                if (!isValidPhoneNumber(msg)) {
+                    addMessage("Please enter a valid 10-digit phone number (e.g., 1234567890).", "bot");
+                    return;
+                }
                 userData.phone = msg;
                 collectionStep++;
-                addMessage("Great! Now share your address.", "bot");
+                addMessage("Great! Now share your email address.", "bot");
             }
 
             else if (collectionStep === 2) {
-                userData.address = msg;
+                // Validate email address
+                if (!isValidEmail(msg)) {
+                    addMessage("Please enter a valid email address (e.g., user@example.com).", "bot");
+                    return;
+                }
+                userData.email = msg;
                 collectionStep++;
                 
                 // Create checkbox options message
@@ -475,7 +501,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // ====== STORE USER DETAILS IN GOOGLE SHEET ======
         async function storeUserData(data) {
-            const body = `type=user&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&address=${encodeURIComponent(data.address)}`;
+            const body = `type=user&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&email=${encodeURIComponent(data.email)}`;
 
             console.log("Sending User Data to Google Sheet ➜", body);
 
@@ -493,7 +519,7 @@ document.addEventListener('DOMContentLoaded', () => {
         async function storeUserDataWithApps(data) {
             const apps = data.apps ? data.apps.join(", ") : "";
             const timestamp = data.timestamp ? data.timestamp : new Date().toISOString();
-            const body = `type=user&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&address=${encodeURIComponent(data.address)}&apps=${encodeURIComponent(apps)}&timestamp=${encodeURIComponent(timestamp)}`;
+            const body = `type=user&name=${encodeURIComponent(data.name)}&phone=${encodeURIComponent(data.phone)}&email=${encodeURIComponent(data.email)}&apps=${encodeURIComponent(apps)}&timestamp=${encodeURIComponent(timestamp)}`;
 
             console.log("Sending User Data with Apps to Google Sheet ➜", body);
 
@@ -526,7 +552,7 @@ document.addEventListener('DOMContentLoaded', () => {
         // ====== CLEAR USER DATA FROM LOCALSTORAGE ======
         function clearUserData() {
             localStorage.removeItem('samplifyUserData');
-            userData = { name: "", phone: "", address: "", apps: [], collected: false, timestamp: null, storedInSheets: false };
+            userData = { name: "", phone: "", email: "", apps: [], collected: false, timestamp: null, storedInSheets: false };
             collectionStep = 0;
             userDataStored = false; // Reset the flag
             console.log("User data cleared from localStorage");
