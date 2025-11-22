@@ -25,10 +25,17 @@ function doPost(e) {
     const phone = e.parameter.phone || '';
     const email = e.parameter.email || '';
     const apps = e.parameter.apps || '';
-    const timestamp = new Date();
+    // Only use provided timestamp, don't generate a new one
+    const timestamp = e.parameter.timestamp || '';
     
     // Add data to the sheet (without message)
-    sheet.appendRow([timestamp, name, phone, email, apps]);
+    // Only add timestamp if provided (first time user data is collected)
+    if (timestamp) {
+      sheet.appendRow([timestamp, name, phone, email, apps]);
+    } else {
+      // If no timestamp, just add the data without timestamp
+      sheet.appendRow(['', name, phone, email, apps]);
+    }
     
     // Return success response
     return ContentService
